@@ -1,66 +1,36 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Datos Contacto',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+  runApp(
+    MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Mis Datos Personales'),
+          title: Text('Mi Perfil', style: TextStyle(color: Colors.white),),
           backgroundColor: Colors.blue,
-          foregroundColor: Colors.white,
         ),
-        body: const Center(
+        body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Icon(Icons.people, color: Colors.green),
               Text(
-                'Datos de Contacto',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
+                'Deiby Jimenez',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text('ADSO'),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple[100],
+                  foregroundColor: Colors.purple[900],
                 ),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'Nombre: Tu Nombre Completo',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'Teléfono: +57 300 123 4567',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'Correo: tu_correo@misena.edu.co',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'Programa: ADSO - SENA',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'Ciudad: Colombia',
-                style: TextStyle(fontSize: 16),
-              ),
+                onPressed: () {},
+                child: Text('Ver Perfil'),
+              )
             ],
           ),
         ),
+
       ),
-    );
-  }
+    ),
+  );
 }
