@@ -55,10 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: const Text(
                 'Menú Principal',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
             ListTile(
