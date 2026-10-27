@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Mi Negocio',
+      title: 'VJ_SHADOW',
       home: MenuInferior(),
     );
   }
@@ -35,7 +35,7 @@ class _MenuInferiorState extends State<MenuInferior> {
         children: [
           Icon(Icons.home, size: 70, color: Colors.blue),
           SizedBox(height: 10),
-          Text('Sección: Inicio del Negocio', style: TextStyle(fontSize: 18)),
+          Text('Inicio', style: TextStyle(fontSize: 18)),
         ],
       ),
     ),
@@ -45,7 +45,7 @@ class _MenuInferiorState extends State<MenuInferior> {
         children: [
           Icon(Icons.shopping_bag, size: 70, color: Colors.blue),
           SizedBox(height: 10),
-          Text('Sección: Nuestros Productos', style: TextStyle(fontSize: 18)),
+          Text('Nuestros Productos', style: TextStyle(fontSize: 18)),
         ],
       ),
     ),
@@ -55,7 +55,7 @@ class _MenuInferiorState extends State<MenuInferior> {
         children: [
           Icon(Icons.business, size: 70, color: Colors.blue),
           SizedBox(height: 10),
-          Text('Sección: Sobre Nosotros', style: TextStyle(fontSize: 18)),
+          Text('Sobre Nosotros', style: TextStyle(fontSize: 18)),
         ],
       ),
     ),
@@ -65,7 +65,7 @@ class _MenuInferiorState extends State<MenuInferior> {
         children: [
           Icon(Icons.phone, size: 70, color: Colors.blue),
           SizedBox(height: 10),
-          Text('Sección: Contacto y Ubicación', style: TextStyle(fontSize: 18)),
+          Text('Contacto y Ubicación', style: TextStyle(fontSize: 18)),
         ],
       ),
     ),
@@ -75,7 +75,7 @@ class _MenuInferiorState extends State<MenuInferior> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mi Negocio Personal'),
+        title: const Text('VJ_SHADOW'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         centerTitle: true,
@@ -94,8 +94,14 @@ class _MenuInferiorState extends State<MenuInferior> {
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: 'Productos'),
-          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Nosotros'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_bag),
+            label: 'Productos',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Nosotros',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.phone), label: 'Contacto'),
         ],
       ),
